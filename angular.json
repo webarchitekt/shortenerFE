@@ -75,8 +75,7 @@
               "browserTarget": "url-short-FE:build:production"
             },
             "development": {
-              "browserTarget": "url-short-FE:build:development",
-              "proxyConfig": "src/proxy.conf.json"
+              "browserTarget": "url-short-FE:build:development"
             }
           },
           "defaultConfiguration": "development"
