@@ -1,0 +1,22 @@
+<div class="flex mh-4">
+  <h3>All URLS shortened:{{ urls.length }} -</h3>
+  <h3>Longest URL has {{ longest }} characters. -</h3>
+  <h3>Shortest URL has {{ shortest }} characters.</h3>
+</div>
+<mat-list *ngFor="let url of urls">
+  <mat-list-item class="flex">
+    <span class="item-sm">{{url.date | date}} | <b class="mh-4">URL:</b></span>
+    <span id="url" class="item-sm">{{url.originalUrl}}</span>
+    <span class="spacer"></span>
+    <span>
+      <b>Short URL:</b>
+      <a target="_blank" [href]="url.shortUrl" class="mh-4">
+        {{url.shortUrl}}
+      </a>
+    </span>
+    <span>
+      <b>Clicks on Short URL:</b>
+      {{url.clicks}}
+    </span>
+  </mat-list-item>
+</mat-list>

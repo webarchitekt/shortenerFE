@@ -1,0 +1,27 @@
+<section class="main">
+  <mat-card class="text-center mat-elevation-z2">
+    <h1 *ngIf="!message">GENERATE YOUR SHORT URL?</h1>
+    <h1 *ngIf="message">PERFECT, IT'S DONE!</h1>
+    <mat-form-field class="form-field" appearance="outline">
+      <mat-label>URL shortener</mat-label>
+      <input matInput type="text" [(ngModel)]="value" (keydown.enter)="generateUrl(value)" required minlength="5">
+      <mat-error>Minimum 5 characters</mat-error>
+      <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <div>
+      <button
+        mat-raised-button
+        color="primary"
+        (click)="generateUrl(value)"
+      >
+        Generate short URL
+      </button>
+    </div>
+    <div class="success-box" *ngIf="message">
+      <span><a class="link" target="_blank" [href]="url?.shortUrl">{{url?.shortUrl}}</a></span>
+      <mat-icon matTooltip="Copy URL" (click)="copyToClipboard(url?.shortUrl)" class="copy-icon">insert_link</mat-icon>
+    </div>
+  </mat-card>
+</section>

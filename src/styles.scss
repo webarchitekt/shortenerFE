@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+$fontPrimary: 'Barlow', sans-serif;
+$fontSizePrimary: 1rem;
+$white: #ffffff;
+
+html, body {
+  font-family: $fontPrimary!important;
+  margin: 0!important;
+}
+
+h3 {
+  margin: 8px 4px!important;
+}
+
+mat-card, mat-form-field, button {
+  font-family: $fontPrimary!important;
+}
+
+mat-list-item {
+  font-family: $fontPrimary!important;
+}
+
+mat-toolbar {
+  font-family: $fontPrimary!important;
+}
+
+.mh-4 {
+  margin: 0 4px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mat-simple-snackbar {
+  font-family: $fontPrimary!important;
+  font-weight: 400;
+}
+
+.error-snack {
+  background: #EA2D2D!important;
+  color: $white!important;
+}
+
+.success-snack {
+  background: #35D5AB!important;
+  color: $white!important;
+}

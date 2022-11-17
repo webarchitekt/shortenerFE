@@ -3,6 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  backendBasePath: 'http://localhost:7000',
   production: false
 };
 

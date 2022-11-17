@@ -1,3 +1,20 @@
+# About
+Please enter the value with minimum 5 characters to input field and click on button. After this process will generate new short url link. Don't forget install all necessary packages.
+
+start app `ng serve`
+# FOLDERS
+`COMPONENTS` - all shareable components across the application
+`MODELS` - URL model
+`SERVICE` - contain all endpoints which FE connected to BE
+`UTILS` - include all special shareable function across the application
+`VIEWS` - parts of application which are displayed for users
+
+# FILES
+
+`app-routing.module.ts` - all routes in application
+`app-module.ts` - all imported modules in application
+`styles.scss` - global styles
+
 # UrlShortFE
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.9.
@@ -25,3 +42,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
